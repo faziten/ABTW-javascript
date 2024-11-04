@@ -30,14 +30,15 @@
           new Chart(ctx, {
             type: 'pie',
             data: {
-              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              labels: ['Socialistas', 'Liberales', 'Animalistas', 'Centristas', 'Ecologistas'],
               datasets: [{
                 label: 'Dataset 1',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [12, 50, 3, 5, 2],
                 borderWidth: 1
               }]
             },
             options: {
+              responsive:true,
               scales: {
                 y: {
                   beginAtZero: true
