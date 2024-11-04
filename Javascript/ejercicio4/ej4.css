@@ -2,8 +2,8 @@
   /* vuestro CSS aquí */
 }
 
-.additional.hidden {
-  /* vuestro CSS aquí */
+.additional-hidden {
+  display: none;
 }
 
 .additional.visible {

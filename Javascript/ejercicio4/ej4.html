@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Ejercicio 5 - DOM básico</title>
-    <link rel="stylesheet" href="ej5.css" />
+    <title>Ejercicio 4 - DOM básico</title>
+    <link rel="stylesheet" href="ej4.css" />
+    <script src="codigo.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
       aliquam vitae, ultrices porttitor, pede.
       <!-- Inicio texto a mostrar/esconder -->
-      <span class="additional hidden">
+      <span id="textoAdicional" class="additional-hidden">
         Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna
         sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis
         eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante
@@ -34,7 +35,6 @@
       </span>
       <!-- Fin texto a mostrar/esconder -->
     </p>
-    <a href="#" onclick="toggleText();">Seguir leyendo</a>
-    <script type="text/javascript" src="js/main.js"></script>
+    <a id= "toggleText" href="#" onclick="toggleText();">Seguir leyendo</a>
   </body>
 </html>

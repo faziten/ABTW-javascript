@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Ejercicio 7 - DOM básico</title>
+    <link rel="stylesheet" href="ej6.css" />
+    <title>Ejercicio 6 - DOM básico</title>
   </head>
 
   <body>
-    <div>
+    <div id="bloque1">
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
@@ -18,10 +19,10 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a onclick="hideText(event);" href="#bloque1">Ocultar contenidos</a>
     </div>
     <br />
-    <div>
+    <div id="bloque2">
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
@@ -33,10 +34,10 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a onclick="hideText(event);" href="#bloque2">Ocultar contenidos</a>
     </div>
     <br />
-    <div>
+    <div id="bloque3">
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
@@ -48,8 +49,8 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a onclick="hideText(event);" href="#bloque3">Ocultar contenidos</a>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="codigo.js"></script>
   </body>
 </html>
