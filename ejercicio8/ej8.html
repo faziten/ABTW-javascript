@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Ejercicio 8 - Votaciones en gráfico</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -18,7 +19,35 @@
         <button type="button" onclick="reset()">Reset</button>
       </div>
       <!-- *** -->
-      <div>Vuestro gráfico</div>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+
+        <script>
+          const ctx = document.getElementById('myChart');
+          
+
+          new Chart(ctx, {
+            type: 'pie',
+            data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                label: 'Dataset 1',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+
     </div>
+    <a href="../index.html">Back</a>
   </body>
 </html>
